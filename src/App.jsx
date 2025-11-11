@@ -16,8 +16,8 @@ export default function App(){
     <div className="min-h-screen flex flex-col bg-maroon-grid text-gray-100">
       <Navbar/>
       <main className="flex-1">
+      <ScrollToTop />
         <Routes>
-        <ScrollToTop />
           <Route path='/' element={<Home/>} />
           <Route path='/publikasi' element={<Publications/>} />
           <Route path='/galeri' element={<Gallery/>} />
