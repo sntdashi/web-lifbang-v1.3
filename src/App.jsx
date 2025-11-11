@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Admin from './pages/Admin'
 import AuthRoute from './components/AuthRoute'
 import AdminLogin from './pages/AdminLogin'
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App(){
   return (
