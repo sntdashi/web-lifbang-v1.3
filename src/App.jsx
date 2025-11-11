@@ -16,6 +16,7 @@ export default function App(){
       <Navbar/>
       <main className="flex-1">
         <Routes>
+        <ScrollToTop />
           <Route path='/' element={<Home/>} />
           <Route path='/publikasi' element={<Publications/>} />
           <Route path='/galeri' element={<Gallery/>} />
