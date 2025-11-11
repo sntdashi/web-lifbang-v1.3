@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --maroon: #6b0f1a;
+  --purple: #5b2a86;
+  --litblue: #2f6fbf;
+}
+
+html,body,#root{height:100%;font-family:'Inter',system-ui,-apple-system,Roboto,'Segoe UI',Arial;}
+
+/* parallax-ish grid background */
+.bg-maroon-grid {
+  background-color: #3a0a0f;
+  background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-blend-mode: overlay;
+}
+
+/* glass card */
+.card-glass{
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+}
+
+.btn-primary{
+  background: linear-gradient(90deg, var(--maroon), var(--purple));
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+}
+
+/* responsive tweaks */
+@media (max-width:768px){
+  .desktop-only{display:none}
+}
